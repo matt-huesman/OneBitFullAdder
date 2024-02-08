@@ -1,0 +1,350 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+ECHO is off.
+ECHO is off.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 498.797 ; gain = 184.293
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'z:/Documents/Projects/vivado/2014_2_artix7_sources/XUP_LIB'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5984
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1341.957 ; gain = 439.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xup_and2_0_0' [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_and2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xup_and2_0_0' (0#1) [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_and2_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xup_and2_1_0' [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_and2_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xup_and2_1_0' (0#1) [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_and2_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xup_or2_0_0' [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_or2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xup_or2_0_0' (0#1) [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_or2_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xup_xor2_0_0' [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_xor2_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xup_xor2_0_0' (0#1) [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_xor2_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xup_xor2_0_1' [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_xor2_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xup_xor2_0_1' (0#1) [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/.Xil/Vivado-3616-MATTHUESMAN97FA/realtime/design_1_xup_xor2_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1448.512 ; gain = 545.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1448.512 ; gain = 545.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1448.512 ; gain = 545.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1448.512 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_xor2_0_0/design_1_xup_xor2_0_0/design_1_xup_xor2_0_0_in_context.xdc] for cell 'design_1_i/xup_xor2_0'
+Finished Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_xor2_0_0/design_1_xup_xor2_0_0/design_1_xup_xor2_0_0_in_context.xdc] for cell 'design_1_i/xup_xor2_0'
+Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_and2_0_0/design_1_xup_and2_0_0/design_1_xup_and2_0_0_in_context.xdc] for cell 'design_1_i/xup_and2_0'
+Finished Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_and2_0_0/design_1_xup_and2_0_0/design_1_xup_and2_0_0_in_context.xdc] for cell 'design_1_i/xup_and2_0'
+Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_xor2_0_1/design_1_xup_xor2_0_1/design_1_xup_xor2_0_1_in_context.xdc] for cell 'design_1_i/xup_xor2_1'
+Finished Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_xor2_0_1/design_1_xup_xor2_0_1/design_1_xup_xor2_0_1_in_context.xdc] for cell 'design_1_i/xup_xor2_1'
+Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_and2_1_0/design_1_xup_and2_1_0/design_1_xup_and2_1_0_in_context.xdc] for cell 'design_1_i/xup_and2_1'
+Finished Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_and2_1_0/design_1_xup_and2_1_0/design_1_xup_and2_1_0_in_context.xdc] for cell 'design_1_i/xup_and2_1'
+Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_or2_0_0/design_1_xup_or2_0_0/design_1_xup_or2_0_0_in_context.xdc] for cell 'design_1_i/xup_or2_0'
+Finished Parsing XDC File [z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.gen/sources_1/bd/design_1/ip/design_1_xup_or2_0_0/design_1_xup_or2_0_0/design_1_xup_or2_0_0_in_context.xdc] for cell 'design_1_i/xup_or2_0'
+Parsing XDC File [Z:/Documents/Projects/vivado/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clock'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'clock'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'clock'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'seg[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'seg[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'seg[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'seg[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'seg[4]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'seg[5]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'seg[6]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'rateUp'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'rateUp'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'rateDn'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'rateDn'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'JA[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'JA[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'JA[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'JA[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'JA[3]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'JA[4]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:142]
+WARNING: [Vivado 12-584] No ports matched 'JA[5]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'JA[5]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'JA[6]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'JA[6]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'JA[7]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:157]
+WARNING: [Vivado 12-584] No ports matched 'JB[0]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:158]
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:160]
+WARNING: [Vivado 12-584] No ports matched 'JB[1]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:161]
+WARNING: [Vivado 12-584] No ports matched 'JB[2]'. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:163]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [Z:/Documents/Projects/vivado/Basys3_Master.xdc:163]
+Finished Parsing XDC File [Z:/Documents/Projects/vivado/Basys3_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [Z:/Documents/Projects/vivado/Basys3_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1455.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1455.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xup_xor2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xup_and2_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xup_xor2_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xup_and2_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xup_or2_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------+----------+
+|      |BlackBox name         |Instances |
++------+----------------------+----------+
+|1     |design_1_xup_and2_0_0 |         1|
+|2     |design_1_xup_and2_1_0 |         1|
+|3     |design_1_xup_or2_0_0  |         1|
+|4     |design_1_xup_xor2_0_0 |         1|
+|5     |design_1_xup_xor2_0_1 |         1|
++------+----------------------+----------+
+
+Report Cell Usage: 
++------+--------------------+------+
+|      |Cell                |Count |
++------+--------------------+------+
+|1     |design_1_xup_and2_0 |     1|
+|2     |design_1_xup_and2_1 |     1|
+|3     |design_1_xup_or2_0  |     1|
+|4     |design_1_xup_xor2_0 |     2|
+|6     |IBUF                |     3|
+|7     |OBUF                |     2|
++------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1455.699 ; gain = 553.152
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:07 . Memory (MB): peak = 1455.699 ; gain = 545.965
+Synthesis Optimization Complete : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1455.699 ; gain = 553.152
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1459.355 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1463.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: ad74a480
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:30 . Memory (MB): peak = 1463.969 ; gain = 956.215
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1463.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/Projects/vivado/one_bit_full_adder/one_bit_full_adder.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  1 14:44:15 2024...
